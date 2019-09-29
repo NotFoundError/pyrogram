@@ -1,0 +1,51 @@
+{
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    }
+  ],
+  "env": {
+    "API_HASH": {
+      "required": true
+    },
+    "APP_ID": {
+      "required": true
+    },
+    "AUTH_USERS": {
+      "required": true
+    },
+    "CHAT_BASE_TOKEN": {
+      "required": true
+    },
+    "DEF_THUMB_NAIL_VID_S": {
+      "required": true
+    },
+    "HTTP_DOMAIN": {
+      "required": true
+    },
+    "HTTP_PROXY": {
+      "required": true
+    },
+    "PORT": {
+      "required": true
+    },
+    "TG_BOT_TOKEN": {
+      "required": true
+    },
+    "WEBHOOK": {
+      "required": true
+    }
+  },
+  "formation": {
+    "worker": {
+      "quantity": 1
+    }
+  },
+  "name": "pyrogram",
+  "scripts": {
+  },
+  "stack": "heroku-18"
+}
